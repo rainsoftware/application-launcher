@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Application Launcher</title>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-image: url("assets/bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+    #preview {
+      width: 70%;
+      height: 70%;
+      border: none;
+    }
+
+    sl-carousel {
+      height: 100vh;
+    }
+
+    .carousel-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+  opacity: 0.4;
+}
+  </style>
+</head>
+<body>
+    <a class="github-fork-ribbon" href="http://url.to-your.repo" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+    <sl-carousel>
+      <!-- Replace the following with your GitHub project details -->
+      <sl-carousel-item>
+        <iframe id="preview" src="https://example.com" frameborder="0"></iframe>
+        <h4>Example application</h4>
+        <div class="button-container">
+          <a href="https://link-to-project1.com" class="btn btn-success btn-lg">Go</a>
+        </div>
+      </sl-carousel-item>
+  
+      <sl-carousel-item>
+        <iframe id="preview" src="https://example.com" frameborder="0"></iframe>
+        <h4>example application</h4>
+        <div class="button-container">
+          <a href="https://link-to-project2.com" class="btn btn-success btn-lg">Go</a>
+        </div>
+      </sl-carousel-item>
+      <!-- Add more sl-carousel-item elements as needed -->
+    </sl-carousel>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
